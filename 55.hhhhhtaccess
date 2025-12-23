@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Default other request
+RewriteCond		%{REQUEST_URI}	!^/media/*
+RewriteCond		%{REQUEST_URI}	!^/js/*
+RewriteCond		%{REQUEST_URI}	!^/css/*
+RewriteCond		%{REQUEST_URI}	!^/_cache/*
+RewriteCond		%{REQUEST_URI}	!^/thumbnailer.php
+RewriteCond		%{REQUEST_URI}	!^/full.html
+
+RewriteRule		^				index.php [L]
+
