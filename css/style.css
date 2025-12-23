@@ -1,0 +1,132 @@
+/*
+	HTML5 Reset :: style.css
+-------------------------------------------------------------------------------*/
+
+html, body {
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: #fff;
+	height: 100%;
+}
+
+img {
+	border: none;
+}
+
+img.resize-background {
+	position: fixed;
+	z-index: 1;
+}
+
+#wrap {
+	position: relative;
+	z-index: 2;
+}
+
+/* Typography */
+body {
+	font: 14px/1 omnes-pro, Helvetica, Arial, sans-serif;
+	background: transparent;
+	color: #333;
+}
+
+select,
+input,
+textarea {
+	font-family: omnes-pro, Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+h1 {
+	font-size: 26px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* Layout */
+.content {
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+/* Header / menu */
+header {
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li a {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0 6px;
+}
+
+/* Page blocks */
+.banner {
+	width: 100%;
+}
+
+.banner-full {
+	min-height: 300px;
+}
+
+.wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* Footer */
+footer.main {
+	margin-top: 40px;
+}
+
+/* =========================
+   STATIC ACTIVE MENU STATE
+   ========================= */
+
+body.home nav li.home a,
+body.team nav li.team a,
+body.products nav li.products a,
+body.quotes nav li.quotes a,
+body.weather nav li.weather a,
+body.contact nav li.contact a {
+	color: #ff9900;
+}
